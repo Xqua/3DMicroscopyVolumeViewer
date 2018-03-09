@@ -28,10 +28,7 @@ Each timepoint needs to be it's own file.
 You can save RAW files using FIJI. 
 
 ## Where do I put my data ?
-I am using the persistentDataPath option of Unity to store the microscopy data. The path depends on your computer, it should be: 
-- On Linux: `$HOME/.config/unity3d/Xqua/3DMicroscopyViewer/Textures/`
-- On Windows: `%userprofile%\AppData\Local\Packages\3DMicroscopyViewer\LocalState\Textures`
-- On Mac OS X: `~/Library/Application Support/Xqua/3DMicroscopyViewer/Textures/`
+I am using the dataPath option of Unity to store the microscopy data. Basically it is the folder where the Executable is located ! 
 
 **To make sure you know the exact path, the Splash Screen will display on the top left corner the path on your system! Make sure to check it out if you have issues**
 

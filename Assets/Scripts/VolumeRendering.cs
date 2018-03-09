@@ -62,7 +62,7 @@ namespace VolumeRendering
             StartCoroutine("Load");
 
             string tex = String.Format("c{0}_t{1:D5}.raw", 0, 0);
-            string path = Path.Combine(Application.persistentDataPath, Path.Combine(DataPath , tex));
+            string path = Path.Combine(Application.dataPath, Path.Combine(DataPath , tex));
             volume = LoadRAW(path) as Texture3D;
             material.SetTexture("_Volume", volume);
             // material.SetTexture("_Volume", volume);
@@ -79,7 +79,7 @@ namespace VolumeRendering
             loader.LogMessage(String.Format("Loading Channel: {0}", c));
             for (int t = 0; t <= settings.timepoints; t++) {
               string tex = String.Format("c{0}_t{1:D5}.raw", c, t);
-              string path = Path.Combine(Application.persistentDataPath, Path.Combine(DataPath , tex));
+              string path = Path.Combine(Application.dataPath, Path.Combine(DataPath , tex));
               Volumes[c,t] = LoadRAW(path) as Texture3D;
               print(counter);
               print(settings.channels * (settings.timepoints+1));
@@ -102,7 +102,7 @@ namespace VolumeRendering
 
         private static VolumeSettings loadTex3DSettings(string path)
         {
-          string filePath = Path.Combine(Application.persistentDataPath, Path.Combine(path , "settings.json"));
+          string filePath = Path.Combine(Application.dataPath, Path.Combine(path , "settings.json"));
           print(filePath);
           // Read the json from the file into a string
           string dataAsJson = File.ReadAllText(filePath);

@@ -10,7 +10,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>English</string>
 	<key>CFBundleExecutable</key>
-	<string>3DMicroscopyViewer</string>
+	<string>3DMicroscopyViewer_v1</string>
 	<key>CFBundleGetInfoString</key>
 	<string>Unity Player version 2017.3.0p2 (7807bc63c3ab). (c) 2018 Unity Technologies ApS. All rights reserved.</string>
 	<key>CFBundleIconFile</key>

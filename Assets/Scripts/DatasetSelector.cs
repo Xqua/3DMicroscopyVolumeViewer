@@ -25,7 +25,7 @@ public class DatasetSelector : MonoBehaviour {
 
   void Start () {
     datasetChooser.ClearOptions();
-    string texturePath = Path.Combine(Application.persistentDataPath, "Textures");
+    string texturePath = Path.Combine(Application.dataPath, "Textures");
     if (!Directory.Exists(texturePath))
              {
                  Directory.CreateDirectory(texturePath);
@@ -37,6 +37,9 @@ public class DatasetSelector : MonoBehaviour {
       dirs.Add(Path.GetFileName(dir));
     }
     datasetChooser.AddOptions(dirs);
+    if (dirs.Count != 0) {
+      Dataset = dirs[0];
+    }
   }
 
   public void Set () {

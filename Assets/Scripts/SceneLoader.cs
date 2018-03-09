@@ -13,7 +13,8 @@ public class SceneLoader : MonoBehaviour {
   public DatasetSelector Dataset;
 
   void Start () {
-    PathText.text = Path.Combine(Application.persistentDataPath, "Textures");;
+    // PathText.text = Path.Combine(Application.persistentDataPath, "Textures");;
+    PathText.text = Path.Combine(Application.dataPath, "Textures");;
   }
 
   public void LoadLevel (int sceneIndex) {
