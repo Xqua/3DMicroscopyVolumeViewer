@@ -13,6 +13,7 @@ The menus and possibilities are quite limited for now.
   - Change the texture3D type based on Channel Number from 1 Alpha8 -> 2 RG8 -> 3 RGB24 -> 4 RGBA32 
   - Modify the shader from sending back the pixel value based on the sum of alpha to a transfer function of sum of alpha per color channel. Each channel giving the color of a pixel in an RGB setting. 
 - Ameliorate the Shader RayMarching ... There are a lot of artefacts that are quite ugly. It looks like the Alpha Blending is just not ... performing well ? Or maybe the number of Rays ? ... 
+- Clean the unity project and remove all that is not used or needed !
 
 # Usage 
 The basic usage is to launch the executable, and then select your dataset. Wait for it to load, and then Enjoy ! 
