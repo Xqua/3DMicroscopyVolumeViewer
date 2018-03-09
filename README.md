@@ -18,6 +18,8 @@ The menus and possibilities are quite limited for now.
 # Usage 
 The basic usage is to launch the executable, and then select your dataset. Wait for it to load, and then Enjoy ! 
 
+**This repo Contains a TEST_TUBE dataset in Assets/Textures folder, if you just want to try the tool but do not have data, just copy it to the correct folder (see: Where do I put my data ?)**
+
 ## What type of data can I load.
 While in theory any form of data could be loaded if someone took the time to build a converter from DATATYPE -> Texture3D, I have implemented a 8Bit RAW to Texture3D. 
 Each timepoint needs to be it's own file. 
